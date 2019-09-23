@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>View Data</title>
+</head>
+
+<body>
+    <form method="" action="/view">
+        <table>
+            <tr>
+                <td>Employee Id</td>
+                <td>Employee Name</td>
+                <td>Employee Designation</td>
+                <td>Employee Salary</td>
+                <td>Operation</td>
+            </tr>
+            {% for emp in data %}
+            <tr>
+                <td>{{emp.0}}</td>
+                <td>{{emp.1}}</td>
+                <td>{{emp.2}</td>
+                <td>{{emp.3}}</td>
+                <td>{{emp.4}}</td>
+            </tr>
+            {% endfor %}
+        </table>
+    </form>
+</body>
+
+</html>

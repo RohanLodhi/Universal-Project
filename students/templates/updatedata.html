@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Update Data</title>
+    </head>
+    <body>
+        <form method="" action="/empupdate">
+        <center>
+            <table>
+                <tr>
+                    <td> Student ID:</td>
+                    <td><input type="int" name="ID" value={{ data.0 }} readonly></td>
+                </tr>
+                <tr>
+                    <td>Student Name</td>
+                    <td><input type="text" name="Name" value={{ data.1 }}></td>
+                </tr>
+                <tr>
+                    <td>Student's Course</td>
+                    <td><input type="text" name="Course" value={{ data.2 }}></td>
+                </tr>
+                <tr>
+                    <td>Student Mobile Number</td>
+                    <td><input type="text" name="Mobile.No" value={{ data.3 }}></td>
+                </tr>
+                <tr>
+                    <td colspan="2"><input type="submit" name="btnSub" value="Update Data"></td>
+                </tr>
+            </table>
+        </center>
+        </form>
+    </body>
+</html>
